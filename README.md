@@ -64,11 +64,10 @@
 
 ---
 
-## :busts_in_silhouette: Contribute
+## :busts_in_silhouette: Хочу доработать код
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create.
-Any contribution is greatly appreciated: big or small, it can be documentation updates, adding new features or something bigger.
-Please check the [**contributing guide**][code-of-conduct] for details on how to help out and keep in mind that all commits must follow the **[conventional commit format][commitlint]**.
+Возможность доработать код — это то, что делает тулзы с открытым исходным кодом таким замечательным местом для обучения, вдохновения и творчества.
+Приветствуется любой вклад: большой или маленький, это могут быть обновления документации, добавление новых функций или что-то большее.
 
 ### Как законтрибуить:
 
