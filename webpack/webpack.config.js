@@ -2,6 +2,7 @@ const path = require('node:path');
 
 const html = require('html-webpack-plugin');
 const css = require('mini-css-extract-plugin');
+const fileManager = require('filemanager-webpack-plugin');
 
 const isProduction = process.env.NODE_ENV === 'production';
 const meta = require('./_config');
@@ -9,7 +10,7 @@ const meta = require('./_config');
 module.exports = {
     mode: 'none',
     entry: {
-        index: path.resolve(__dirname, 'src/index.js'),
+        index: path.resolve(__dirname, '../src/index.js'),
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -115,7 +116,7 @@ module.exports = {
                             {
                                 source: path.resolve(
                                     __dirname,
-                                    'src/assets/favicon/**'
+                                    '../src/assets/favicon/**'
                                 ),
                                 destination: 'dist/favicon',
                             },
@@ -126,7 +127,7 @@ module.exports = {
                             {
                                 source: path.resolve(
                                     __dirname,
-                                    'src/assets/app.webmanifest'
+                                    '../src/assets/app.webmanifest'
                                 ),
                                 destination: 'dist/',
                             },
