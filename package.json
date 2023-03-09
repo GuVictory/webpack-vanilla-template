@@ -4,9 +4,12 @@
   "description": "Template for vanilla JS apps",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --open --node-env development",
+    "start": "webpack-dev-server --open --node-env development",
     "build": "webpack --node-env production",
-    "preview": "nodemon server.js"
+    "preview": "nodemon server.js",
+    "lint": "npx eslint --ext js ./src",
+    "lint:fix": "npx eslint --ext js ./src --fix",
+    "clean": "npx rimraf dist"
   },
   "repository": {
     "type": "git",
@@ -19,6 +22,11 @@
   },
   "homepage": "https://github.com/GuVictory/webpack-vanilla-template#readme",
   "devDependencies": {
+    "@babel/core": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
+    "autoprefixer": "^10.4.13",
+    "babel-loader": "^9.1.2",
+    "css-loader": "^6.7.3",
     "cssnano": "^5.1.15",
     "eslint": "^8.35.0",
     "eslint-config-prettier": "^8.7.0",
@@ -35,6 +43,7 @@
     "mini-css-extract-plugin": "^2.7.3",
     "nodemon": "^2.0.21",
     "postcss": "^8.4.21",
+    "postcss-import": "^15.1.0",
     "postcss-loader": "^7.0.2",
     "prettier": "^2.8.4",
     "sass": "^1.58.3",
